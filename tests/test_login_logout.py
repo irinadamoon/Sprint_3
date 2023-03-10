@@ -22,7 +22,7 @@ def test_login_from_entry_burron_at_main_page(driver):
 
 # ожидание что зашли в лк
     assert expected_conditions.element_to_be_clickable(TestLocators.BUTTON_CHECKOUT_ACCOUNT)
-    driver.quit()
+
 
 # тест на вход по кнопке "Личный кабинет" в шапке сайта
 def test_login_from_personal_account_button_at_top(driver):
@@ -43,7 +43,7 @@ def test_login_from_personal_account_button_at_top(driver):
 
 # ожидание что зашли в лк
     assert expected_conditions.element_to_be_clickable(TestLocators.BUTTON_CHECKOUT_ACCOUNT)
-    driver.quit()
+
 
 
 # тест кнопки "Войти" в форме регистрации
@@ -73,7 +73,7 @@ def test_button_login_from_registration_form(driver):
 
 # ожидание что зашли в лк
     assert expected_conditions.element_to_be_clickable(TestLocators.BUTTON_CHECKOUT_ACCOUNT)
-    driver.quit()
+
 
 
 # тест входа через форму восстановления пароля
@@ -103,7 +103,7 @@ def test_login_from_restore_password_form(driver):
 
 # ожидание что зашли в лк
     assert expected_conditions.element_to_be_clickable(TestLocators.BUTTON_CHECKOUT_ACCOUNT)
-    driver.quit()
+
 
 
 # тест кнопки "Выйти" в личном кабинете
@@ -133,4 +133,4 @@ def test_logout_button_from_personal_account(driver):
     driver.find_element(*TestLocators.BUTTON_LOGOUT_IN_PERS_ACC).click()
 # ожидание кликабельности кнопки
     assert expected_conditions.element_to_be_clickable(TestLocators.LINK_RESTORE_PASSWORD)
-    driver.quit()
+

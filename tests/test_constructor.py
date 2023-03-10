@@ -20,7 +20,7 @@ def test_page_transition_breads_sauses(driver):
     driver.execute_script("arguments[0].scrollIntoView();", element)
 
     assert expected_conditions.visibility_of_element_located((TestLocators.LAST_SAUCES_CARD_IMG))
-    driver.quit()
+
 
 
 # переход "Соусы" -> "Начинки"
@@ -40,7 +40,7 @@ def test_page_transition_sauses_inputs(driver):
     driver.execute_script("arguments[0].scrollIntoView();", element)
 
     assert expected_conditions.visibility_of_element_located((TestLocators.LAST_INPUT_CARD_IMG))
-    driver.quit()
+
 
 
 
@@ -61,4 +61,3 @@ def test_page_transition_inputs_breads(driver):
     driver.execute_script("arguments[0].scrollIntoView();", element)
 
     assert expected_conditions.visibility_of_element_located((TestLocators.LAST_BREAD_CARD_IMG))
-    driver.quit()

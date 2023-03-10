@@ -37,7 +37,7 @@ def test_registration_possibility(driver):
     driver.find_element(*TestLocators.BUTTON_LOGIN_LOGIN_PAGE).click()
 # проверка что зашли в лк
     assert expected_conditions.element_to_be_clickable(TestLocators.BUTTON_CHECKOUT_ACCOUNT)
-    driver.quit()
+
 
 
 # Тест на некорректный пароль (есть ошибкв)
@@ -64,4 +64,4 @@ def test_incorrect_len5_password_misstake_message(driver):
     driver.find_element(*TestLocators.BUTTON_REG_IN_REGISTRATION_FORM).click()
 # проверка наличия ошибки
     assert driver.find_element(*TestLocators.ERROR_INCORRECT_PASSWORD)
-    driver.quit()
+

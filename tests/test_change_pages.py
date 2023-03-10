@@ -26,7 +26,7 @@ def test_login_using_personal_account_button(driver):
     driver.find_element(*TestLocators.BUTTON_PERSONAL_ACCOUNT).click()
 # проверка кликабельности кнопки
     assert expected_conditions.element_to_be_clickable(TestLocators.BUTTON_SAVE_IN_PERS_ACC)
-    driver.quit()
+
 
 
 # тест перехода из Личного кабинета в конструктор по кнопке "Конструктор"
@@ -57,7 +57,7 @@ def test_move_from_personal_account_to_constructor_using_constructor_button(driv
     driver.find_element(*TestLocators.LINK_CONSTRUCTOR).click()
 # ожидание кликабельности кнопки
     assert expected_conditions.element_to_be_clickable((TestLocators.BUTTON_CHECKOUT_ACCOUNT))
-    driver.quit()
+
 
 # тест перехода из личного кабинета в конструктор по клику на логотип Stellar Burgers
 def test_move_from_personal_account_to_constructor_using_logo(driver):
@@ -87,4 +87,3 @@ def test_move_from_personal_account_to_constructor_using_logo(driver):
     driver.find_element(*TestLocators.LOGO_STELLAR_BURGERS).click()
 # ожидание кликабельности кнопки
     assert expected_conditions.element_to_be_clickable((TestLocators.BUTTON_CHECKOUT_ACCOUNT))
-    driver.quit()
