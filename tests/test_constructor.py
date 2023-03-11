@@ -13,7 +13,7 @@ def test_page_transition_breads_sauses(driver):
     driver.find_element(*TestLocators.LINK_SAUCES).click()
 
 # ожидание загрузки списка карточек
-    WebDriverWait(driver, 3).until(expected_conditions.visibility_of_element_located((TestLocators.LIST_OF_SAUCES_CARDS)))
+    WebDriverWait(driver, 3).until(expected_conditions.visibility_of_element_located((TestLocators.LIST_OF_CARDS)))
 
 # скролл до нижней карточки
     element = driver.find_element(*TestLocators.LAST_SAUCES_CARD)
@@ -34,7 +34,7 @@ def test_page_transition_sauses_inputs(driver):
     driver.find_element(*TestLocators.LINK_INPUTS).click()
 
 # ожидание загрузки списка карточек
-    WebDriverWait(driver, 3).until(expected_conditions.visibility_of_element_located((TestLocators.LIST_OF_INPUTS_CARDS)))
+    WebDriverWait(driver, 3).until(expected_conditions.visibility_of_element_located((TestLocators.LIST_OF_CARDS)))
 # скролл до нижней карточки
     element = driver.find_element(*TestLocators.LAST_INPUTS_CARD)
     driver.execute_script("arguments[0].scrollIntoView();", element)
@@ -55,7 +55,7 @@ def test_page_transition_inputs_breads(driver):
     driver.find_element(*TestLocators.LINK_BREADS).click()
 
 # ожидание загрузки списка карточек
-    WebDriverWait(driver, 3).until(expected_conditions.visibility_of_element_located((TestLocators.LIST_OF_BREADS_CARDS)))
+    WebDriverWait(driver, 3).until(expected_conditions.visibility_of_element_located((TestLocators.LIST_OF_CARDS)))
 # скролл до нижней карточки
     element = driver.find_element(*TestLocators.LAST_BREAD_CARD)
     driver.execute_script("arguments[0].scrollIntoView();", element)

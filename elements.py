@@ -9,7 +9,7 @@ class TestLocators:
     BUTTON_REG_IN_REGISTRATION_FORM = [By.XPATH, "//button[text()='Зарегистрироваться']"]   # кн "зарегистрироваться" в форме регистрации
     FIELD_REGISTRATION_NAME = [By.XPATH, "//fieldset[1]//input"]   # поле ввода имени в форме регистр
     FIELD_REGISTRATION_LOGIN = [By.XPATH, "//fieldset[2]//input"]   # поле ввода имейла в форме регистр
-    FIELD_REGISTRATION_PASSWORD = [By.XPATH, "//fieldset[3]//input"]   # поле ввода пароля в форме регистр
+    FIELD_REGISTRATION_PASSWORD = [By.XPATH, "//input[@name='Пароль']"]   # поле ввода пароля в форме регистр
     BUTTON_LOGIN_LOGIN_PAGE = [By.XPATH, "//button[text()='Войти']"]   # кн "Войти" на стр логина
     BUTTON_CHECKOUT_ACCOUNT = [By.XPATH, "//button[contains(text(), 'Оформить заказ')]"]   # кн "Оформить заказ" в лк
     BUTTON_PERSONAL_ACCOUNT = [By.XPATH, "//p[contains(text(), 'Личный')]"]   # кн "Личный кабинет"
@@ -19,17 +19,15 @@ class TestLocators:
     LOGO_STELLAR_BURGERS = [By.XPATH, "//div[contains(@class, 'AppHeader_header__logo')]"]   # логотип
     ERROR_INCORRECT_PASSWORD = [By.XPATH, "//*[contains(text(), 'Некорректный пароль')]"]   # некорректный пароль
     LINK_SAUCES = [By.XPATH, "//span[contains(text(), 'Соусы')]"]   # линк вкладки "Соусы"
-    LIST_OF_SAUCES_CARDS = [By.XPATH, "//section[1]/div[2]/ul[2]"]   # список карточек соусов
+    LIST_OF_CARDS = [By.XPATH, "//ul[@class='BurgerIngredients_ingredients__list__2A-mT']"]   # список карточек
     LAST_SAUCES_CARD = [By.XPATH, "//*[contains(text(), 'Соус с шипами Антарианского плоскоходца')]"]   # последняя карточка соусов
-    LAST_SAUCES_CARD_IMG = [By.XPATH, "//section[1]/div[2]/ul[2]/a[4]/img" ]  # изображение последней карточки соусов
+    LAST_SAUCES_CARD_IMG = [By.XPATH, "//img[@alt='Соус с шипами Антарианского плоскоходца']" ]  # изображение последней карточки соусов
     LINK_INPUTS = [By.XPATH, "//span[contains(text(), 'Начинки')]"]   # линк вкладки "Начинки"
-    LIST_OF_INPUTS_CARDS = [By.XPATH, "//section[1]/div[2]/ul[3]"]   # список карточек начинок
     LAST_INPUTS_CARD = [By.XPATH, "//*[contains(text(), 'Сыр с астероидной плесенью')]"]   # последняя карточка начинок
-    LAST_INPUT_CARD_IMG = [By.XPATH, "//section[1]/div[2]/ul[3]/a[9]/img"]   # изображение последней карточки начинок
+    LAST_INPUT_CARD_IMG = [By.XPATH, "//img[@alt='Сыр с астероидной плесенью']"]   # изображение последней карточки начинок
     LINK_BREADS = [By.XPATH, "//span[contains(text(), 'Булки')]"]   # линк вкладки "Булки"
-    LIST_OF_BREADS_CARDS = [By.XPATH, "//section[1]/div[2]/ul[1]"]   # список карточек булок
-    LAST_BREAD_CARD = [By.XPATH, "//section[1]/div[2]/ul[1]/a[2]/p"]   # последняя карточка булок
-    LAST_BREAD_CARD_IMG = [By.XPATH, "//section[1]/div[2]/ul[1]/a[2]/img"]   # изображение последней карточки булок
+    LAST_BREAD_CARD = [By.XPATH, "//*[contains(text(), 'Краторная')]"]   # последняя карточка булок
+    LAST_BREAD_CARD_IMG = [By.XPATH, "//img[@alt='Краторная булка N-200i']"]   # изображение последней карточки булок
     BUTTON_CONSTRUCTOR = [By.XPATH, "//*[contains(text(), 'Конструктор')]"]   # кн "Конструктор"
 
 
